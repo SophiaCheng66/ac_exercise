@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	font-family: Open Sans;
+  color: #354545;
+}
+
+/* Excercise - 新增陰影、卡片圓角 */
+.card {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background:#F5F5F5;
+  box-shadow:10px 2px 10px #A2A2A2;
+  border-radius:5px;
+}
+
+.color-background {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://data.photo-ac.com/data/thumbnails/0e/0ee12252e8b815201b9330c6dc5d34f3_w.jpeg') center center;
+  border-radius:5px; 
+  background-size: cover;
+  
+  }
+
+/* Excercise - 替換圖片 */
+.color-background .avatar {
+  width: 160px;
+  height:160px;
+  border-radius: 50%;
+  background: url('https://data.photo-ac.com/data/thumbnails/cd/cd4c50bbaf082e906d3089155bb28a1c_w.jpeg') 
+center center;
+ background-size: cover;
+ transition: width 2s, height 4s;
+} 
+.color-background .avatar:hover {
+  width:180px;
+}
+.profile {
+  height: 65%;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info {
+  height: 50% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 25px;
+}
+
+/* Excercise - 調整文字顏色 */
+.user-info h1 {
+  font-size: 1.6em;
+  color:#4b0082 ;
+  margin: 20px 0 0 0;
+}
+
+/* Excercise - 調整文字行距*/
+.user-info p {
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  text-align: center;
+  line-height:1.8;
+  letter-spacing:1px;
+}
+
+.call-to-action {
+  height: 20%;
+  width: 100% ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call-to-action .cta-btn {
+  width: 150px;
+  height: 44px;
+  cursor: pointer;
+  padding: 2px 10px;
+  border:none;
+  text-align: center;
+  font-size: 15px;
+  color: #808080; 
+  background:#D8E6E7;
+}
+.call-to-action .cta-btn:hover{
+  background:#FADAD8;
+}
+/* Excercise - 新增 button 樣式 */
+/* 同時選擇 .cta-btn.contact-me，*/
+.call-to-action .cta-btn.contact-me，中間不用空白
+  background-color:#c35362; 
+  color:#fff;
+  border:none;
+  
+}
+
+.media-site {
+  height: 30%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.media-site ul {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.media-site ul a {
+  color: #808080;
+}
+
+.media-site ul li {
+  display: inline-block;
+  line-height: 0;
+  font-size: 30px;
+}
